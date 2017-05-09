@@ -4,14 +4,6 @@ set -o nounset
 set -o pipefail
 
 #-------------------------------------------------------------------------------
-# This script must run as root
-#-------------------------------------------------------------------------------
-if [[ $(whoami) != "root" ]]; then
-    echo "Error: This script must be run as root!"
-    exit 1
-fi
-
-#-------------------------------------------------------------------------------
 # Set environment variables
 #-------------------------------------------------------------------------------
 # The order of sourcing the variable files is significant so please do not
